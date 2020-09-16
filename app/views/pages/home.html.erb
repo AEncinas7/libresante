@@ -1,17 +1,19 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/libresante/image/upload/v1600267133/f5uo0jpacmjg86wv0pne.jpg);">
   <div class="container">
-    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <a class="btn btn-flat" href="#">Apply now</a>
+    <h1>Productos Medicos</h1>
+    <p>Productos medicos</p>
   </div>
 </div>
 
-
-
-<h1>Productos Medicos</h1>
-<p>Productos medicos</p>
-<ul>
-  <% @filters.each do |filter| %>
-    <li><%= filter.name %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h1>Explora Libresanté</h1>
+  <div class="cards">
+    <% @filters.each do |filter| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.25)), url(https://images.unsplash.com/photo-1564065316768-b8793a4eb675?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);">
+        <div class="input">
+          <%= filter.name %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
