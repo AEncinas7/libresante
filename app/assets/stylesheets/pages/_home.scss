@@ -1,10 +1,17 @@
 body {
   font-family: Inter;
   color: #484848;
+  background-color: white;
 }
 
 .container {
   margin: 0 auto;
+  padding: 0px;
+}
+
+.ext-container {
+  width: 1340px;
+  margin: 0px auto;
 }
 
 .banner {

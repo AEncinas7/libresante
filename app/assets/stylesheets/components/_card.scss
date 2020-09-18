@@ -24,10 +24,11 @@
 }
 
 .card-contact {
-  overflow: hidden;
-  height: 300px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 330px;
+  width: 1140px;
+  padding: 40px;
+  // background: white;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
 }
@@ -41,11 +42,66 @@
 
 .details {
   width: 370px;
+  margin-right: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .name {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  .role {
+    margin-bottom: 0px;
+  }
+}
+
+.content {
+  margin-bottom: 38px;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 550;
+  text-align: justify;
 }
 
 .owl-carousel .owl-item img {
- width: 165px;
+ width: 186px;
+ margin-bottom: 16px;
 }
+
+.contact-btn {
+  display: flex;
+  justify-content: flex-end;
+  .btnbtn {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 13px 12px 13px 52px;
+    border-radius: 14px;
+    &:hover {
+      background-color: #4392F1;
+      a, i {
+        color: white;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+  }
+  a, i {
+    color: #484848;
+  }
+}
+
+.owl-two .owl-dot {
+  outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #4392F1;
+}
+
 // // Smallest device
 // @media (min-width: 100px) and (max-width: 575px) {
 //   .cards {

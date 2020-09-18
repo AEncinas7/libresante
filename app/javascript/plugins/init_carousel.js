@@ -15,9 +15,12 @@ const initCarousel = () => {
     $('.owl-two').owlCarousel({
       items: 1,
       autoWidth: false,
-      dots: false,
-      smartSpeed: 150,
+      dots: true,
+      smartSpeed: 1500,
       nav: false,
+      // autoplay: true,
+      // autoplaySpeed: 50 / true,
+      loop: true
     });
   });
 };
