@@ -1,0 +1,25 @@
+.owl-one {
+  position: relative;
+}
+
+.fa-chevron-circle-left {
+  position: absolute;
+  font-size: 26px;
+  color: gray;
+  left: -20px;
+  top: 78px;
+  &:hover {
+    color: #4392F1;
+  }
+}
+
+.fa-chevron-circle-right {
+  position: absolute;
+  font-size: 26px;
+  color: gray;
+  right: -20px;
+  top: 78px;
+  &:hover {
+    color: #4392F1;
+  }
+}
