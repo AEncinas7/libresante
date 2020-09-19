@@ -25,7 +25,9 @@ body {
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  // padding: 150px 0;
+  height: 100vh;
+  padding-top: 40vh;
 }
 
 .banner h1 {
@@ -46,7 +48,8 @@ body {
 .banner-two {
   background-size: cover;
   background-position: center;
-  height: 165px;
+  height: 260px;
+  margin-top: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
