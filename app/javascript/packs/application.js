@@ -18,8 +18,10 @@ require("channels")
 //imports
 import 'bootstrap';
 import { initCarousel } from "../plugins/init_carousel";
+import { initUpdateNavbarOnScroll } from '../components/navbar';
 
 // initialize plugins
 document.addEventListener('turbolinks:load', () => {
   initCarousel();
+  initUpdateNavbarOnScroll();
 });
