@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/home'
   root to: 'pages#home'
+  resources :products, only: [:index]
+  resources :filters, only: [:show]
 end
