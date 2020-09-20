@@ -1,0 +1,44 @@
+.categories {
+  margin: 0px auto;
+  text-align: center;
+  width: 440px;
+  height: 44px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.chevron {
+  position: absolute;
+  right: 0px;
+  top: 15%;
+  background-color: #4392F1;
+  border-radius: 14px;
+  i {
+    color: white;
+  }
+}
+
+.btn:focus, .btn.focus {
+  box-shadow: none;
+}
+
+// .cat-btn {
+//   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+//   border-radius: 14px;
+//   padding: 13px 12px 13px 52px;
+//   width: 440px;
+//   height: 44px;
+//   position: relative;
+// }
+
+// .dropdown-toggle::after {
+//   position: absolute;
+
+// }

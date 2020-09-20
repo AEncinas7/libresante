@@ -1,9 +1,9 @@
 <div class="cards-prod">
-    <% @filters.each do |filter| %>
-      <div class="card-product" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('<%= cl_image_path Product.where(filter_id: (filter.id)).first.image.key, height: 160, width: 250, crop: :fill %>')">
-        <div class="input">
-          <%= Product.where(filter_id: (filter.id)).first.name %>
-        </div>
+  <% @filters.each do |filter| %>
+    <div class="card-product" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('<%= cl_image_path Product.where(filter_id: (filter.id)).first.image.key, height: 160, width: 250, crop: :fill %>')">
+      <div class="input">
+        <%= Product.where(filter_id: (filter.id)).first.name %>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
+</div>
