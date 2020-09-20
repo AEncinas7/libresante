@@ -19,14 +19,21 @@
     </div>
   </div>
 
-  <div class="cards-prod">
+  <div class="cards">
     <% @products.each do |prod| %>
-      <div class="card-product" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('<%= cl_image_path prod.image.key, height: 160, width: 250, crop: :fill %>')">
-        <div class="input">
-          <%= prod.name %>
+      <div class="card">
+        <%= cl_image_tag prod.image.key, height: 250, width: 263, crop: :mpad %>
+        <div class="card-body">
+          <div class="prod-name">
+            <%= prod.name %>
+          </div>
+          <div class="prod-description">
+            <%= prod.description %>
+          </div>
+          <%= link_to "Mas", "#", class: "more-btn" %>
         </div>
       </div>
     <% end %>
- </div>
+  </div>
 
 </div>
