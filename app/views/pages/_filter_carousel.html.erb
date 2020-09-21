@@ -1,7 +1,7 @@
 <div class="owl-one owl-carousel owl-theme cards">
     <% @filters.each do |filter| %>
       <%= link_to filter_path(filter) do %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1564065316768-b8793a4eb675?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);">
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('<%= cl_image_path filter.image.key, height: 181, width: 315, crop: :fill %>') ">
           <div class="input">
             <%= filter.name %>
           </div>

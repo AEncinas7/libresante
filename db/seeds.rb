@@ -4,7 +4,23 @@ require 'open-uri'
 Filter.destroy_all
 Product.destroy_all
 
-puts "Generating filters..."
+puts "Generating filters and pictures..."
+
+img_1 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707927/Filtros%20%28pictures%29/Filtros/national-cancer-institute-KrsoedfRAf4-unsplash_vly9un.jpg')
+img_2 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707912/Filtros%20%28pictures%29/Circuitos/richard-catabay-05kHY7AYCp8-unsplash_wnpsjk.jpg')
+img_3 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707928/Filtros%20%28pictures%29/Montajes/artur-tumasjan-qLzWvcQq-V8-unsplash_cbhb8f.jpg')
+img_4 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707925/Filtros%20%28pictures%29/Mascarillas/h-shaw-ObI8mL772cI-unsplash_hxdzsf.jpg')
+img_5 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707923/Filtros%20%28pictures%29/Bolsas%20de%20respiraci%C3%B3n/natanael-melchor-43LwvC-eQPM-unsplash_t3fgf5.jpg')
+img_6 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707927/Filtros%20%28pictures%29/Resucitadores/piron-guillaume-y5hQCIn1c6o-unsplash_oeub7i.jpg')
+img_7 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707913/Filtros%20%28pictures%29/Conectores/olga-guryanova-tMFeatBSS4s-unsplash_jlwl4k.jpg')
+img_8 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600709042/Filtros%20%28pictures%29/Vias%20respiratorias/rsz_1rsz_national-cancer-institute-j55tmqkzq4k-unsplash_qp99iw.jpg')
+img_9 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707914/Filtros%20%28pictures%29/Canulas/hush-naidoo-ZCO_5Y29s8k-unsplash_zflcc9.jpg')
+img_10 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707928/Filtros%20%28pictures%29/Tubos/piron-guillaume-vNFHg0J0wRs-unsplash_agyxlq.jpg')
+img_11 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600707906/Filtros%20%28pictures%29/Atomizadores%20_%20Nebulizadores/piron-guillaume-U4FyCp3-KzY-unsplash_sd7uql.jpg')
+img_12 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600708583/Filtros%20%28pictures%29/Humidificadores/rsz_national-cancer-institute-c6rgp7k5rxc-unsplash_fmdjhl.jpg')
+
+images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10, img_11, img_12]
+
 filters = [
   "Filtros",
   "Circuitos",
@@ -20,9 +36,15 @@ filters = [
   "Humidificadores" 
 ]
 
-filters.each do |filter|
-  Filter.create!(name: "#{filter}")
+filters.zip(images).each do |filter, img|
+  filt = Filter.new(name: "#{filter}")
+  filt.image.attach(io: img, filename: 'nes.png', content_type: 'image/png')
+  filt.save!
 end
+
+# filters.each do |filter|
+#   Filter.create!(name: "#{filter}")
+# end
 
 puts "Generating products and photos..."
 
