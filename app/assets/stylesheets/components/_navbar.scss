@@ -15,6 +15,7 @@
   -webkit-text-stroke-color: white;
   font-size: 36px;
   transition: 0.5s -webkit-text-stroke-color ease;
+  margin-left: 10px;
 }
 
 .brand-black {
@@ -32,7 +33,7 @@
   width: 40px;
 }
 
-.languages {
+.item-icon {
   display: flex;
   align-items: center;
 }
@@ -61,4 +62,8 @@
   &:hover {
     color: #484848;
   }
+}
+
+.nav-item {
+  margin: 0px 10px;
 }
