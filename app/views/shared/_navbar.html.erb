@@ -1,5 +1,12 @@
 <div class="navbar navbar-expand-sm navbar-libresante fixed-top">
-  <%= link_to "Libresanté", root_path, class: "navbar-brand brand" %>
+  <%= link_to root_path, class: "navbar-brand white-brand" do %>
+    <%= image_tag "https://res.cloudinary.com/libresante/image/upload/v1600705878/Libresant%C3%A9_white_xefxq8.png" %>
+  <% end %>
+  <%= link_to root_path, class: "navbar-brand black-brand" do %>
+    <%= image_tag "https://res.cloudinary.com/libresante/image/upload/v1600705878/Libresant%C3%A9_black_aqeexp.png" %>
+  <% end %>
+
+ <%# <%= link_to "Libresanté", root_path, class: "navbar-brand brand" %> 
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
