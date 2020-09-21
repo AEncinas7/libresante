@@ -1,0 +1,55 @@
+// Product modals
+.modal-content {
+  height: 720px;
+  border-radius: 50px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 57px 0px 50px 0px;
+  border-bottom: 0px;
+  img {
+    border-radius: 20px;
+  }
+}
+
+.modal-body {
+  text-align: center;
+  padding: 0px 119px;
+  .modal-prod-name {
+    font-weight: bold;
+  }
+  .modal-prod-description {
+    font-weight: 500;
+  }
+}
+
+.modal-footer {
+  border-top: 0px;
+  padding: 0px 45px 45px 0px;
+  .btnbtn {
+    width: 200px;
+    height: 48px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 13px 12px 13px 52px;
+    border-radius: 14px;
+    background-color: #4392F1;
+    a, i {
+      color: white;
+    }
+  }
+  a {
+    text-decoration: none;
+    margin-right: 22px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 576px){
+ .modal-dialog {
+    max-width: 720px;
+    // margin: 1.75rem auto;
+ }
+}
