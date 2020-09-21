@@ -110,13 +110,4 @@ CSV.foreach(filepath, csv_options).zip(photos) do |row, pic|
   prod.save!
 end
 
-# puts "Attaching photos..."
-
-# products = Product.all
-
-# products.zip(photos).each do |prod, pic|
-#   prod.image.attach(io: pic, filename: 'nes.png', content_type: 'image/png')
-#   prod.save!
-# end
-
 puts "Seed finished!"
