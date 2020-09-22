@@ -1,63 +1,6 @@
-﻿filter,category,name,description
-Filtros,Intercambio de calor y humedad (HMEF),Filtro de intercambio de calor y humedad (HMEF) de baja filtración,Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa.
-Filtros,Intercambio de calor y humedad (HMEF),Filtro de intercambio de calor y humedad (HMEF) Alta filtración,Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa. Estos filtros tienen un alto nivel de filtración.
-Filtros,Intercambio de calor y humedad (HMEF),,
-Filtros,Intercambio de calor y humedad (HMEF),,
-Filtros,Intercambio de calor y humedad (HMEF),,
-Filtros,Intercambio de calor y humedad (HMEF),,
-Filtros,Bacterial/Viral (BVF),Filtro Bacterial/Viral (BVF),Estos filtros son utilizados para minimizar la penetración de partículas bacterianas y virales en cuidados intensivos y en anestesia.
-Circuitos,Respiratorio,Circuito respiratorio expandible,
-Circuitos,Respiratorio,Circuito respiratorio corrugado,
-Circuitos,Respiratorio,Circuito respiratorio coaxial,
-Circuitos,Respiratorio,Circuito respiratorio agujero liso,
-Circuitos,Respiratorio,Circuito respiratorio con sifón de agua (2 orificios o sin orificio),
-Circuitos,Respiratorio,Sistema de respiración con alambre calentador (simple / doble),
-Circuitos,Infantil,Generador de flujo infantil (kit/circuito),
-Circuitos,Respiratorio,Circuito de silicona con sifón,
-Montajes,Montajes de cateter,Montaje de cateter,
-Mascarillas,Anestesia,Mascarilla de anestesia de cojín suave,
-Mascarillas,Anestesia,Mascarilla de anestesia sin PVC,
-Mascarillas,Anestesia,Mascarilla de anestesia estándar,
-Mascarillas,Anestesia,Mascarilla de silicona para anestesia tipo B,
-Mascarillas,Anestesia,Mascarilla de silicona para anestesia tipo A,
-Bolsas de respiración,Latex,Bolsa de respiración de látex,
-Bolsas de respiración,Sin Latex,Bolsa de respiración sin látex,
-Bolsas de respiración,Silicona,Bolsa de respiración de silicona,
-Bolsas de respiración,Goma,Bolsa de respiración de goma,
-Resucitadores,SEBS,Resucitador de SEBS,
-Resucitadores,PVC,Resucitador de PVC,
-Resucitadores,Silicona,Resucitador de silicona,
-Resucitadores,Silicona,Resucitador de silicona líquida,
-Mascarillas,CPAP,Mascarilla CPAP,
-Mascarillas,CPR,Mascarilla CPR,
-Mascarillas,Nasal,Mascarilla Nasal,
-Conectores,Dos vías,Colector de 2 vías,
-Conectores,Tres vías,Colector de 3 vías,
-Conectores,Tres vías,Colector de 3 vías con puerto,
-Mascarillas,Laríngea,Mascarilla laríngea desechable de PVC,
-Mascarillas,Laríngea,Mascarilla laríngea desechable de silicona,
-Mascarillas,Laríngea,Mascarilla laríngea de silicona reforzada,
-Mascarillas,Laríngea,Vía respiratoria con mascarilla laríngea de vía delgada,
-Mascarillas,Laríngea,Mascarilla laríngea de 2 vías,
-Mascarillas,Laríngea,Set de laringoscopio de anestesia (75mm talla),
-Vias respiratorias,Nasofaríngea,Vía respiratoria nasofaríngea,
-Vias respiratorias,Guedel,Vías respiratorias Guedel,
-Canulas,Traqueotomía,Cánula de traqueotomía con balón,
-Tubos,Endotraqueal,Tubo endotraqueal con balón,
-Tubos,Endotraqueal,Tubo endotraqueal reforzado con balón,
-Tubos,Endotraqueal,Tubo endotraqueal sin balón,
-Tubos,Endotraqueal,Tubo endotraqueal oral preformado,
-Tubos,Endotraqueal,Tubo endotraqueal nasal preformado,
-Tubos,Endobronquial,Tubo endobronquial (izquierda / derecha),
-Mascarillas,Respiratoria,Máscara de traqueotomía,
-Mascarillas,Respiratoria,Mascarilla de oxígeno simple,
-Mascarillas,Respiratoria,Nebulizador con mascarilla de aerosol,
-Mascarillas,Respiratoria,Non-rebreather con bolsa de depósito,
-Mascarillas,Respiratoria,Mascarilla de ventilación múltiple,
-Mascarillas,Respiratoria,Mascarilla con Venturi ajustable,
-Atomizadores & Nebulizadores,Atomizador ,Taza atomizadora,
-Atomizadores & Nebulizadores,Nebulizador,Nebulizador compresor,
-Atomizadores & Nebulizadores,Nebulizador,Nebulizador con pieza de montaje,
-Canulas,Oxigeno,Cánula nasal oxigeno,
-Canulas,Oxigeno,Cánula CO2 oxigeno,
-Humidificadores,Humidificador,Humidificador,
+﻿category,catalog,name,description,detailFiltro de Intercambio de calor y humedad (HMEF),HMEFLFM01,Filtro de intercambio de calor y humedad (HMEF) de baja filtración,Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa.,"Tallas: infante, pediátrica, adulta"Filtro de Intercambio de calor y humedad (HMEF),HMEFHFM01,Filtro de intercambio de calor y humedad (HMEF) Alta filtración,"Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa. Estos filtros tienen un alto nivel de filtración.
+","Tallas: infante, pediátrica, adulta"Filtro de Intercambio de calor y humedad (HMEF),HMEFHFM02,Filtro de intercambio de calor y humedad (HMEF) Alta filtración,"Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa. Estos filtros tienen un alto nivel de filtración.
+","Tallas: infante, pediátrica, adulta"Filtro de Intercambio de calor y humedad (HMEF),HMEFHFM03,Filtro de intercambio de calor y humedad (HMEF) Alta filtración,"Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa. Estos filtros tienen un alto nivel de filtración.
+","Tallas: infante, pediátrica, adulta"Filtro de Intercambio de calor y humedad (HMEF),HMEFHFM04,Filtro de intercambio de calor y humedad (HMEF) Alta filtración,"Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa. Estos filtros tienen un alto nivel de filtración.
+","Tallas: infante, pediátrica, adulta"Filtro de Intercambio de calor y humedad (HMEF),HMEFHFM05,Filtro de intercambio de calor y humedad (HMEF) Alta filtración,"Estos filtros son usados para prevenir la perdida de calor y de humedad en los sistemas de respiración. También están diseñados para prevenir la contaminación cruzada bacteriana y viral de los sistemas de respiración usados para pacientes con una enfermedad infecciosa. Estos filtros tienen un alto nivel de filtración.
+","Tallas: infante, pediátrica, adulta"Filtro Bacterial/Viral (BVF),BVFHFM01,Filtro bacterial /viral (BVF),Estos filtros son utilizados para minimizar la penetración de partículas bacterianas y virales en cuidados intensivos y en anestesia.,"Tallas: pediátrica, adulta"Circuito Respiratorio,BCEXM01,Circuito respiratorio expandible,,"Tallas: longitud 1.0m, longitud 1.2m, longitud 1.5m, longitud 1.8m"Circuito Respiratorio,BCCOM01,Circuito respiratorio corrugado,,"Tallas: longitud 1.0m, longitud 1.2m, longitud 1.5m, longitud 1.8m, longitud 2.0m"Circuito Respiratorio,BCCXM01,Circuito respiratorio coaxial,,"Tallas: longitud 1.5m, longitud 1.8, longitud 2.4m"Circuito Respiratorio,BCSMM01,Circuito respiratorio agujero liso,,"Tallas: longitud 1.5m, longitud 1.8"Circuito Respiratorio,BCWWM01 (sin orificio)/BCWWM02 (2 orificios),Circuito respiratorio con sifón de agua (2 orificios o sin orificio) - Conector 'Y',,Tallas: longitud 1.8mCircuito Respiratorio,BCHWM01 (simple)/BCHWM02 (doble),Sistema de respiración con alambre calentador (simple / doble),,"Tallas: infante, pediátrica, adulta"Circuito Respiratorio,FGIM01K (kit)/ FGIM01C (circuito),Generador de flujo infantil (kit/circuito),,"Tallas: longitud 1.5m, longitud 1.8m, longitud 2.3m, longitud 3.0m"Circuito Respiratorio,SCWTM01,Circuito de silicona con sifón,,"Tallas: longitud 1.5m, longitud 1.8m, longitud 2.3m, longitud 3.0m"Montaje de cateter,CMM01,Montaje de catéter,,"Tipos: expandible, corrugado, agujero liso"Mascarilla anestesia,SCAMM01,Mascarilla de anestesia de cojín suave,,"Tallas: #1, #2, #3, #4, #5, #6"Mascarilla anestesia,AMPVCFM01,Mascarilla de anestesia sin PVC,,"Tallas: #1, #2, #3, #4, #5, #6"Mascarilla anestesia,AMM01,Mascarilla de anestesia estándar,,"Tallas: #1, #2, #3, #4, #5, #6"Mascarilla anestesia,AMSTBM01,Mascarilla de silicona para anestesia tipo B,,"Tallas: #3, #4"Mascarilla anestesia,AMSTAM01,Mascarilla de silicona para anestesia tipo A,,"Tallas: #1, #2, #3, #4, #5, #6"Bolsa de respiración,BBLM01,Bolsa de respiración de látex,,"Volumen: 0.5L, 1.0L, 2.0L, 3.0L"Bolsa de respiración,BBFLM01,Bolsa de respiración sin látex,,"Volumen: 0.5L, 1.0L, 2.0L, 3.0L"Bolsa de respiración,BBSM01,Bolsa de respiración de silicona,,"Volumen: 0.5L, 1.0L, 2.0L, 3.0L"Bolsa de respiración,BBRM01,Bolsa de respiración de goma,,"Volumen: 0.5L, 1.0L, 2.0L, 3.0L, 0.5L"Resucitador,RESSEBSM01,Resucitador de SEBS,,Talla adultaResucitador,RESPVCM01,Resucitador de PVC,,Talla adultaResucitador,RESSM01,Resucitador de silicona,,Talla adultaResucitador,RESLSM01,Resucitador de silicona líquida,,Talla adultaMascarilla CPAP,CPAPMM01,Mascarilla CPAP (adulto),,"Tallas: grande, mediana, pequeña"Mascarilla CPR,CPRMM01,Mascarilla CPR,,"Talla: pediátrica, adulta"Mascarilla Nasal,NMM01,Mascarilla nasal,,"Tallas: grande, mediana, pequeña"Conectores,2WMM01,Colector de 2 vías,,Talla unicaConectores,3WMM01,Colector de 3 vías,,Talla unicaConectores,3WMPM01,Colector de 3 vías con puerto,,Talla unicaMascarilla laríngea,DLMPVCM01 ,Mascarilla laríngea desechable de PVC,,"Talla: #1, #1.5, #2, #2.5, #3, #4, #5"Mascarilla laríngea,DLMSM01,Mascarilla laríngea desechable de silicona,,"Talla: #1, #1.5, #2, #2.5, #3, #4, #5"Mascarilla laríngea,RLMSM01,Mascarilla laríngea de silicona reforzada,,"Talla: #1, #1.5, #2, #2.5, #3, #4, #5"Mascarilla laríngea,SWLMAM01,Vía respiratoria con mascarilla laríngea de vía delgada,,"Talla: #1, #1.5, #2, #2.5, #3, #4, #5"Mascarilla laríngea,2WLMM01,Mascarilla laríngea de 2 vías,,"Talla: #1, #1.5, #2, #2.5, #3, #4, #5"Mascarilla laríngea,ALSM01,Set de laringoscopio de anestesia (75mm talla),,"Talla: 95mm, 100mm, 120mm, 130mm, 140mm, 160mm"Vias respiratorias (Airway),NAM01,Vía respiratoria nasofaríngea,,Talla: 3.0-9.5 mmVias respiratorias (Airway),GUAM01,Vías respiratorias Guedel,,"Talla: 40mm(infante), 50mm(infante), 60mm(infante), 70mm(pediátrico), 80mm(pediátrico), 90mm(pediátrico), 100mm(adulto), 110mm(adulto), 120mm(adulto)"Traqueotomía y Endotraqueal,TRTCM01,Cánula de traqueotomía con balón,,Talla #3-10Traqueotomía y Endotraqueal,ETTCM01,Tubo endotraqueal con balón,,Talla #3-10Traqueotomía y Endotraqueal,RETTCM01,Tubo endotraqueal reforzado con balón,,Talla #3-10Traqueotomía y Endotraqueal,ETTUCM01,Tubo endotraqueal sin balón,,Talla #3-10Traqueotomía y Endotraqueal,ETTOPM01,Tubo endotraqueal oral preformado,,Talla #Fr26-41Traqueotomía y Endotraqueal,ETTNPM01,Tubo endotraqueal nasal preformado,,Talla #3-10Tubo Endobronqueal (Lado izquierdo/derecho),ETBTM01,Tubo endobronquial (izquierda / derecha),,Talla #3-10Mascarilla Respiratoria,TMM01,Máscara de traqueotomía,,"Talla: pediátrica, adulta"Mascarilla Respiratoria,SOMM01,Mascarilla de oxígeno simple,,"Talla:  extrapequeña, pequeña, mediana, grande, extragrande"Mascarilla Respiratoria,NAMM01,Nebulizador con mascarilla de aerosol,,"Talla:  extrapequeña, pequeña, mediana, grande, extragrande"Mascarilla Respiratoria,NRRBM01,Non-rebreather con bolsa de depósito,,"Talla:  extrapequeña, pequeña, mediana, grande, extragrande"Mascarilla Respiratoria,MVMM01,Mascarilla de ventilación múltiple,,"Talla:  extrapequeña, pequeña, mediana, grande, extragrande"Mascarilla Respiratoria,AVMM01,Mascarilla con Venturi ajustable,,"Talla:  extrapequeña, pequeña, mediana, grande, extragrande"Atomizador y Nabulizador,ACM01,Taza atomizadora,,Talla unicaAtomizador y Nabulizador,CNM01 ,Nebulizador compresor,,Talla unicaAtomizador y Nabulizador,NMPM01,Nebulizador con pieza de montaje,,"Volumen: 6ml, 20ml"Atomizador y Nabulizador,NOCM01,Cánula nasal oxigeno,,"Talla: neonatal, infante, pediátrica, adulta"Atomizador y Nabulizador,CO2OCM01,Cánula CO2 oxigeno,,"Talla: neonatal, infante, pediátrica, adulta"Atomizador y Nabulizador,HM01,Humidificador,,"Volumen: 200ml, 250ml, 500ml"
