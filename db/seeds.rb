@@ -124,11 +124,11 @@ photos = [pic_1, pic_2, pic_3, pic_4, pic_5, pic_6, pic_7, pic_8, pic_9, pic_10,
           pic_62]
 
 
-filepath = 'data_libresante_ES.csv'
+filepath = 'libresante_ES.csv'
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 
 CSV.foreach(filepath, csv_options).zip(photos) do |row, pic|
-  prod = Product.new(name: row[2], description: row[3], category: row[1], filter_id: Filter.find_by(name: row[0]).id)
+  prod = Product.new(catalog: row[1], name: row[2], description: row[3], detail: row[4], category: row[0], filter_id: Filter.find_by(name: row[0]).id)
   prod.image.attach(io: pic, filename: 'nes.png', content_type: 'image/png')
   prod.save!
 end
