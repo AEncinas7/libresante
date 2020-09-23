@@ -6,7 +6,7 @@
       </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="productinfo<%= index %>" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal fade first_modal" id="productinfo<%= index %>" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
@@ -18,11 +18,36 @@
             <div class="modal-body">
               <p class="modal-prod-name"><%= Product.where(filter_id: (filter.id)).first.name %> - <%= Product.where(filter_id: (filter.id)).first.catalog %></p>
               <p class="modal-prod-description"><%= Product.where(filter_id: (filter.id)).first.description %></p>
+              <p class="modal-prod-detail"><%= Product.where(filter_id: (filter.id)).first.detail %></p>
             </div>
             <div class="modal-footer">
               <div class="btnbtn">
-                  <%= link_to "CONTACTAR", "#", class: "word" %>
+                  <%= link_to "CONTACTAR", "#", class: "word", id: "modal2", data: { toggle: "modal", target: "#jorge" } %>
                   <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade second_modal" id="jorge" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered contact-dialog">
+          <div class="modal-content contact-content">
+            <div class="contact-modal-header">
+              <p>Contáctanos</p>
+              <button type="button" class="close contact-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="contact-modal-body">
+              <div class="contact-img">
+                <%= cl_image_tag("Jorge_fvpyuo.png", :transformation=> [{:width=>450, :height=>450, :gravity=>"face", :radius=>"max", :crop=>"crop"}, {:width=>150, :crop=>"scale"}]) %>
+              </div>
+              <div class="contact-details">
+                <p class="contact-role">Director de ventas</p>
+                <p class="contact-name">Jorge Gavilano Frantzen</p>
+                <p class="contact-email">jorgegavilano.frantzen@libresante.com</p>
+                <p class="contact-whatsapp">WhatsApp: +51 923501 365</p>
               </div>
             </div>
           </div>
