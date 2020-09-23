@@ -18,6 +18,7 @@
             <div class="modal-body">
               <p class="modal-prod-name"><%= Product.where(filter_id: (filter.id)).first.name %> - <%= Product.where(filter_id: (filter.id)).first.catalog %></p>
               <p class="modal-prod-description"><%= Product.where(filter_id: (filter.id)).first.description %></p>
+              <p class="modal-prod-detail"><%= Product.where(filter_id: (filter.id)).first.detail %></p>
             </div>
             <div class="modal-footer">
               <div class="btnbtn">

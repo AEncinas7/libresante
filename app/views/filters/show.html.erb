@@ -10,17 +10,41 @@
 
 <div class="container">
   <div class="cards">
-    <% @products.each do |prod| %>
+    <% @products.each_with_index do |prod, index| %>
       <div class="card">
         <%= cl_image_tag prod.image.key, height: 250, width: 263, crop: :mpad %>
         <div class="card-body">
           <div class="prod-name">
-            <%= prod.name %>
+            <p><%= prod.name %> - <%= prod.catalog %></p>
           </div>
           <div class="prod-description">
             <%= prod.description %>
           </div>
-          <%= link_to "Mas", "#", class: "more-btn"%>
+          <%= link_to "Mas", "#", class: "more-btn", data: { toggle: "modal", target: "#productinfo#{index}" }%>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="productinfo<%= index %>" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <%= cl_image_tag prod.image.key, height: 313, width: 350, crop: :fill %>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p class="modal-prod-name"><%= prod.name %> - <%= prod.catalog %></p>
+                <p class="modal-prod-description"><%= prod.description %></p>
+                <p class="modal-prod-detail"><%= prod.detail %></p>
+              </div>
+              <div class="modal-footer">
+                <div class="btnbtn">
+                    <%= link_to "CONTACTAR", "#", class: "word" %>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     <% end %>

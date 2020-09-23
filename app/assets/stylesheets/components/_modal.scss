@@ -1,6 +1,12 @@
 // Product modals
 .modal-content {
-  height: 720px;
+  height: 760px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.contact-content {
+  height: 422px;
   border-radius: 50px;
   position: relative;
 }
@@ -9,6 +15,16 @@
   position: absolute;
   top: 3%;
   left: 3%;
+  span {
+    font-size: 35px;
+    font-weight: 300;
+  }
+}
+
+.contact-close {
+  position: absolute;
+  top: 5%;
+  left:5%;
   span {
     font-size: 35px;
     font-weight: 300;
@@ -26,9 +42,21 @@
   }
 }
 
+.contact-modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px 50px 0px;
+  border-bottom: 0px;
+  font-size: 28px;
+  img {
+    border-radius: 20px;
+  }
+}
+
 .modal-body {
   text-align: center;
-  padding: 0px 119px;
+  padding: 0px 90px;
   .modal-prod-name {
     font-weight: bold;
   }
@@ -37,9 +65,36 @@
   }
 }
 
+.contact-modal-body {
+  text-align: center;
+  padding: 0px 119px;
+  display: flex;
+  justify-content: center;
+  .contact-img {
+    margin-right: 50px
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contact-name {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .contact-role {
+    margin-bottom: 0px;
+  }
+  .contact-email {
+    margin-bottom: 4px;
+  }
+}
+
 .modal-footer {
   border-top: 0px;
-  padding: 0px 45px 45px 0px;
+  padding: 0px 45px 35px 0px;
   .btnbtn {
     width: 200px;
     height: 48px;
@@ -61,6 +116,10 @@
 @media (min-width: 576px){
  .modal-dialog {
     max-width: 720px;
-    // margin: 1.75rem auto;
+ }
+}
+@media (min-width: 576px){
+ .contact-dialog {
+    max-width: 663px;
  }
 }
