@@ -1,8 +1,31 @@
 <div class="cards-prod">
-  <% @filters.each do |filter| %>
-    <div class="card-product" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('<%= cl_image_path Product.where(filter_id: (filter.id)).first.image.key, height: 160, width: 250, crop: :fill %>')">
+  <% @filters.each_with_index do |filter, index| %>
+    <div class="card-product" data-toggle="modal" data-target="#productinfo<%= index %>" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('<%= cl_image_path Product.where(filter_id: (filter.id)).first.image.key, height: 160, width: 250, crop: :fill %>')">
       <div class="input">
         <%= Product.where(filter_id: (filter.id)).first.name %>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="productinfo<%= index %>" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <%= cl_image_tag Product.where(filter_id: (filter.id)).first.image.key, height: 313, width: 350, crop: :fill %>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="modal-prod-name"><%= Product.where(filter_id: (filter.id)).first.name %> - <%= Product.where(filter_id: (filter.id)).first.catalog %></p>
+              <p class="modal-prod-description"><%= Product.where(filter_id: (filter.id)).first.description %></p>
+            </div>
+            <div class="modal-footer">
+              <div class="btnbtn">
+                  <%= link_to "CONTACTAR", "#", class: "word" %>
+                  <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   <% end %>
