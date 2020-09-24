@@ -30,4 +30,14 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  general.contact_btn: "CONTACT"
+  pages:
+    home:
+      banner_title: "Medical Products"
+      banner_phrase: "For hospitals and clinics"
+      explore_title: "Explore Libresanté"
+      jorge_role: "Sales Director"
+      jorge_content_1: "We are a Canadian company interested in expanding its operations in Peruvian territory. Characterized by offering high quality products and a sales service in expectation of a satisfied clientele. We have chosen products with high demand to start our operations in Peru."
+      jorge_content_2: "We put at your disposal our HEMF and viral / bacteria filters necessary for the protection of medical personnel as well as that of patients. These filters have the role of eliminating the possibility of contagion of diseases as dangerous as Covid-19, when it is put into use in mechanical fans."
+      renato_role: "CEO"
+      renato_content: "Libresante is a Canadian company that sells essential medical products to hospitals, clinics and private medical facilities. We offer high quality products with all the necessary certificates for proper operation. We provide a respectful and above all humane sales service, having customer satisfaction as the highest priority."

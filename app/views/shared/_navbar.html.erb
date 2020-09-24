@@ -18,8 +18,8 @@
       <li class="nav-item dropdown item-icon">
         <i class="fas fa-globe-americas icon-white"></i> <%= link_to "Idioma", "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdow">
-          <%= link_to "Español", "#", class: "dropdown-item" %>
-          <%= link_to "Ingles", "#", class: "dropdown-item" %>
+          <%= link_to "Español", root_path(locale: :es), class: "dropdown-item" %>
+          <%= link_to "Ingles", root_path(locale: :en), class: "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item item-icon">

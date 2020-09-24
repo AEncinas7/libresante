@@ -1,12 +1,12 @@
 <div class="banner banner-container" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/libresante/image/upload/v1600267133/f5uo0jpacmjg86wv0pne.jpg);">
   <div class="container">
-    <h1>Productos Medicales</h1>
-    <p>Para hospitales y clinicas</p>
+    <h1><%= t('.banner_title') %></h1>
+    <p><%= t('.banner_phrase') %></p>
   </div>
 </div>
 
 <div class="ext-container">
-  <h1>Explora Libresanté</h1>
+  <h1><%= t('.explore_title') %></h1>
   <%= render 'filter_carousel'%>
 </div>
 
