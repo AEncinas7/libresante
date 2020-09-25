@@ -1,5 +1,9 @@
 es:
   general_contact_btn: "CONTACTAR"
+  general_contact_btn_2: "Contactar"
+  language: "Idioma"
+  spanish_language: "Español"
+  english_language: "Ingles"
   pages:
     home:
       banner_title: "Productos Medicales"
@@ -11,3 +15,4 @@ es:
       renato_role: "Director General"
       renato_content: "Libresante es una empresa canadiense que comercializa productos médicos imprescindibles a las instalaciones hospitalarias, clínicas y medicas privadas. Ofrecemos productos de alta calidad con todos los certificados necesarios al buen funcionamiento. Damos un servicio de venta respetuoso y sobre todo humano, teniendo la satisfacción del cliente como máxima prioridad."
       contact_modal_title: "Contáctanos"
+      products_title: "Productos a descrubrir"

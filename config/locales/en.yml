@@ -31,6 +31,10 @@
 
 en:
   general_contact_btn: "CONTACT"
+  general_contact_btn_2: "Contact"
+  language: "Language"
+  spanish_language: "Spanish"
+  english_language: "English"
   pages:
     home:
       banner_title: "Medical Products"
@@ -42,3 +46,4 @@ en:
       renato_role: "CEO"
       renato_content: "Libresante is a Canadian company that sells essential medical products to hospitals, clinics and private medical facilities. We offer high quality products with all the necessary certificates for proper operation. We provide a respectful and above all humane sales service, having customer satisfaction as the highest priority."
       contact_modal_title: "Contact us"
+      products_title: "Products to discover"
