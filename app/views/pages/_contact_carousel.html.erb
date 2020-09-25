@@ -3,16 +3,16 @@
     <div class="details">
       <%= cl_image_tag("Jorge_fvpyuo.png", :aspect_ratio=>"1:1", :border=>"0px_solid_rgb:ffffff", :gravity=>"face:center", :quality=>100, :radius=>"max", :width=>1000, :crop=>"fill") %>
       <p class="name">Jorge Gavilano Frantzen</p>
-      <p class="role">Director de ventas</p>
+      <p class="role"><%= t('pages.home.jorge_role') %></p>
     </div>
     <div class="text">
       <div class="content">
-        <p>Somos una empresa canadiense interesados en ampliar sus operaciones en territorio peruano. Caracterizados por ofrecer productos de alta calidad y un servicio de venta a la expectativa de una clientela satisfecha. Hemos elegidos productos con mucha demanda para iniciar nuestras operaciones en Perú.</p>
-        <p>Ponemos a su disposición nuestros filtros HEMF y viral/bacteria necesarios para la protección del personal médico tanto como la de los pacientes. Estos filtros tienen como rol de eliminar la posibilidad de contagio de enfermedades tan peligrosas como el Covid-19, cuando se pone en uso en ventiladores mecánicos.</p>
+        <p><%= t('pages.home.jorge_content_1') %></p>
+        <p><%= t('pages.home.jorge_content_2') %></p>
       </div>
       <div class="contact-btn">
         <div class="btnbtn">
-          <%= link_to "CONTACTAR", "#", class: "word", data: { toggle: "modal", target: "#jorge" } %>
+          <%= link_to "#{t('general_contact_btn')}", "#", class: "word", data: { toggle: "modal", target: "#jorge" } %>
           <i class="fas fa-chevron-right"></i>
         </div> 
       </div>
@@ -23,15 +23,15 @@
     <div class="details">
       <%= cl_image_tag("Renato_ysjybv.png", :transformation=> [{:width=>450, :height=>450, :gravity=>"face", :radius=>"max", :crop=>"crop"}, {:width=>200, :crop=>"scale"}]) %>
       <p class="name">Renato Tuesta Vilca</p>
-      <p class="role">Director General</p>  
+      <p class="role"><%= t('pages.home.renato_role') %></p>  
     </div>
     <div class="text">
       <div class="content">
-        <p>Libresante es una empresa canadiense que comercializa productos médicos imprescindibles a las instalaciones hospitalarias, clínicas y medicas privadas. Ofrecemos productos de alta calidad con todos los certificados necesarios al buen funcionamiento. Damos un servicio de venta respetuoso y sobre todo humano, teniendo la satisfacción del cliente como máxima prioridad.</p>
+        <p><%= t('pages.home.renato_content') %></p>
       </div>
       <div class="contact-btn">
         <div class="btnbtn">
-          <%= link_to "CONTACTAR", "#", class: "word", data: { toggle: "modal", target: "#renato" } %>
+          <%= link_to "#{t('general_contact_btn')}", "#", class: "word", data: { toggle: "modal", target: "#renato" } %>
           <i class="fas fa-chevron-right"></i>
         </div>
       </div>
@@ -40,34 +40,12 @@
 </div>
 
 <!-- Modals -->
-<div class="modal fade" id="renato" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered contact-dialog">
-      <div class="modal-content contact-content">
-        <div class="contact-modal-header">
-          <p>Contáctanos</p>
-          <button type="button" class="close contact-close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="contact-modal-body">
-          <div class="contact-img">
-            <%= cl_image_tag("Renato_ysjybv.png", :transformation=> [{:width=>450, :height=>450, :gravity=>"face", :radius=>"max", :crop=>"crop"}, {:width=>150, :crop=>"scale"}]) %>
-          </div>
-          <div class="contact-details">
-            <p class="contact-role">Director General</p>
-            <p class="contact-name">Renato Tuesta Vilca</p>
-            <p class="contact-email">renatotuesta.vilca@libresante.com</p>
-          </div>
-        </div>
-      </div>
-  </div>
-</div>
 
 <div class="modal fade" id="jorge" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered contact-dialog">
       <div class="modal-content contact-content">
         <div class="contact-modal-header">
-          <p>Contáctanos</p>
+          <p><%= t('pages.home.contact_modal_title') %></p>
           <button type="button" class="close contact-close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -77,7 +55,7 @@
             <%= cl_image_tag("Jorge_fvpyuo.png", :transformation=> [{:width=>450, :height=>450, :gravity=>"face", :radius=>"max", :crop=>"crop"}, {:width=>150, :crop=>"scale"}]) %>
           </div>
           <div class="contact-details">
-            <p class="contact-role">Director de ventas</p>
+            <p class="contact-role"><%= t('pages.home.jorge_role') %></p>
             <p class="contact-name">Jorge Gavilano Frantzen</p>
             <p class="contact-email">jorgegavilano.frantzen@libresante.com</p>
             <p class="contact-whatsapp">WhatsApp: +51 923501 365</p>
@@ -86,3 +64,27 @@
       </div>
   </div>
 </div>
+
+<div class="modal fade" id="renato" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered contact-dialog">
+      <div class="modal-content contact-content">
+        <div class="contact-modal-header">
+          <p><%= t('pages.home.contact_modal_title') %></p>
+          <button type="button" class="close contact-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="contact-modal-body">
+          <div class="contact-img">
+            <%= cl_image_tag("Renato_ysjybv.png", :transformation=> [{:width=>450, :height=>450, :gravity=>"face", :radius=>"max", :crop=>"crop"}, {:width=>150, :crop=>"scale"}]) %>
+          </div>
+          <div class="contact-details">
+            <p class="contact-role"><%= t('pages.home.renato_role') %></p>
+            <p class="contact-name">Renato Tuesta Vilca</p>
+            <p class="contact-email">renatotuesta.vilca@libresante.com</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
