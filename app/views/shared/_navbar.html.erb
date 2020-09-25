@@ -18,8 +18,8 @@
       <li class="nav-item dropdown item-icon">
         <i class="fas fa-globe-americas icon-white"></i> <%= link_to "#{t('language')}", "#", class: "nav-link dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
         <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdow">
-          <%= link_to "#{t('spanish_language')}", root_path(locale: :es), class: "dropdown-item" %>
-          <%= link_to "#{t('english_language')}", root_path(locale: :en), class: "dropdown-item" %>
+          <%= link_to "#{t('spanish_language')}", {locale: :es}, class: "dropdown-item" %>
+          <%= link_to "#{t('english_language')}", {locale: :en}, class: "dropdown-item" %>
         </div>
       </li>
       <li class="nav-item item-icon">
