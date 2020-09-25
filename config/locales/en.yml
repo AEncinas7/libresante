@@ -30,7 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  general.contact_btn: "CONTACT"
+  general_contact_btn: "CONTACT"
   pages:
     home:
       banner_title: "Medical Products"
@@ -41,3 +41,4 @@ en:
       jorge_content_2: "We put at your disposal our HEMF and viral / bacteria filters necessary for the protection of medical personnel as well as that of patients. These filters have the role of eliminating the possibility of contagion of diseases as dangerous as Covid-19, when it is put into use in mechanical fans."
       renato_role: "CEO"
       renato_content: "Libresante is a Canadian company that sells essential medical products to hospitals, clinics and private medical facilities. We offer high quality products with all the necessary certificates for proper operation. We provide a respectful and above all humane sales service, having customer satisfaction as the highest priority."
+      contact_modal_title: "Contact us"

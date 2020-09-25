@@ -1,5 +1,5 @@
 es:
-  general.contact_btn: "CONTACTAR"
+  general_contact_btn: "CONTACTAR"
   pages:
     home:
       banner_title: "Productos Medicales"
@@ -10,3 +10,4 @@ es:
       jorge_content_2: "Ponemos a su disposición nuestros filtros HEMF y viral/bacteria necesarios para la protección del personal médico tanto como la de los pacientes. Estos filtros tienen como rol de eliminar la posibilidad de contagio de enfermedades tan peligrosas como el Covid-19, cuando se pone en uso en ventiladores mecánicos."
       renato_role: "Director General"
       renato_content: "Libresante es una empresa canadiense que comercializa productos médicos imprescindibles a las instalaciones hospitalarias, clínicas y medicas privadas. Ofrecemos productos de alta calidad con todos los certificados necesarios al buen funcionamiento. Damos un servicio de venta respetuoso y sobre todo humano, teniendo la satisfacción del cliente como máxima prioridad."
+      contact_modal_title: "Contáctanos"
