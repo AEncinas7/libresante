@@ -4,7 +4,7 @@ require 'open-uri'
 Filter.destroy_all
 Product.destroy_all
 
-puts "Generating filters and pictures..."
+puts "Generating filters and pictures (spanish)..."
 
 img_1 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600808616/Filtros%20%28pictures%29/richard-catabay-05kHY7AYCp8-unsplash_ijecsa.jpg')
 img_2 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600808615/Filtros%20%28pictures%29/national-cancer-institute-KrsoedfRAf4-unsplash_awd3et.jpg')
@@ -26,7 +26,7 @@ img_17 = URI.open('https://res.cloudinary.com/libresante/image/upload/v160080858
 
 images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10, img_11, img_12, img_13, img_14, img_15, img_16, img_17]
 
-filters = [
+filters_es = [
   "Filtro de Intercambio de calor y humedad (HMEF)",
   "Filtro Bacterial/Viral (BVF)",
   "Circuito Respiratorio",
@@ -46,13 +46,13 @@ filters = [
   "Atomizador y Nabulizador"
 ]
 
-filters.zip(images).each do |filter, img|
+filters_es.zip(images).each do |filter, img|
   filt = Filter.new(name: "#{filter}")
   filt.image.attach(io: img, filename: 'nes.png', content_type: 'image/png')
   filt.save!
 end
 
-puts "Generating products and photos..."
+puts "Generating products and photos (spanish)..."
 
 pic_1 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600809913/products%20%28pictures%29/1-HMEFLFM01_ier8ib.jpg')
 pic_2 = URI.open('https://res.cloudinary.com/libresante/image/upload/v1600809913/products%20%28pictures%29/2-HMEFHFM01_wcjbvo.jpg')
@@ -124,13 +124,49 @@ photos = [pic_1, pic_2, pic_3, pic_4, pic_5, pic_6, pic_7, pic_8, pic_9, pic_10,
           pic_62]
 
 
-filepath = 'libresante_ES.csv'
+filepath = 'libresante_ES_EN.csv'
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 
 CSV.foreach(filepath, csv_options).zip(photos) do |row, pic|
-  prod = Product.new(catalog: row[1], name: row[2], description: row[3], detail: row[4], category: row[0], filter_id: Filter.find_by(name: row[0]).id)
+  prod = Product.new(catalog: row[2], name: row[4], description: row[6], detail: row[8], category: row[0], filter_id: Filter.find_by(name: row[0]).id)
   prod.image.attach(io: pic, filename: 'nes.png', content_type: 'image/png')
   prod.save!
+end
+
+puts "Generating translations (english)..."
+
+filters_en = [
+  "Heat moisture exchanger filters (HMEF)",
+  "Bacterial/Viral Filter (BVF)",
+  "Breathing Circuit",
+  "Catheter Mount",
+  "Anesthesia mask",
+  "Breathing bag",
+  "Resuscitator",
+  "CPAP mask",
+  "CPR mask",
+  "Nasal mask",
+  "Connectors",
+  "Laryngeal mask",
+  "Airway",
+  "Tracheostomy & endotracheal",
+  "Endobronchial tube (left/right)",
+  "Respiratory mask",
+  "Atomizing & nebulizer"
+]
+
+Filter.all.zip(filters_en).each do |filter, translation|
+  I18n.locale = :en
+  filter.update_attribute(:name, translation)
+end
+
+CSV.foreach(filepath, csv_options).zip(Product.all) do |row, prod|
+  I18n.locale = :en
+  prod.update_attribute(:catalog, row[3])  
+  prod.update_attribute(:name, row[5])  
+  prod.update_attribute(:description, row[7])  
+  prod.update_attribute(:detail, row[9])  
+  prod.update_attribute(:category, row[1])  
 end
 
 puts "Seed finished!"
