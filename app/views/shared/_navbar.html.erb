@@ -6,8 +6,6 @@
     <%= image_tag "https://res.cloudinary.com/libresante/image/upload/v1600705878/Libresant%C3%A9_black_aqeexp.png" %>
   <% end %>
 
- <%# <%= link_to "Libresanté", root_path, class: "navbar-brand brand" %> 
-
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -28,35 +26,3 @@
     </ul>
   </div>
 </div>
-
-<!-- Modals -->
-
-<%
-=begin %>
-
-<div class="modal fade" id="jorge" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered contact-dialog">
-        <div class="modal-content contact-content">
-          <div class="contact-modal-header">
-            <p>Contáctanos</p>
-            <button type="button" class="close contact-close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="contact-modal-body">
-            <div class="contact-img">
-              <%= cl_image_tag("Jorge_fvpyuo.png", :transformation=> [{:width=>450, :height=>450, :gravity=>"face", :radius=>"max", :crop=>"crop"}, {:width=>150, :crop=>"scale"}]) %>
-            </div>
-            <div class="contact-details">
-              <p class="contact-role">Director de ventas</p>
-              <p class="contact-name">Jorge Gavilano Frantzen</p>
-              <p class="contact-email">jorgegavilano.frantzen@libresante.com</p>
-              <p class="contact-whatsapp">WhatsApp: +51 923501 365</p>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <%
-=end %>

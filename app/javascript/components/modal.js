@@ -1,33 +1,15 @@
 const initModal = () => {
-  const btns = document.querySelectorAll("#modal2");
-  const firstModal = document.querySelectorAll(".first_modal");
-  const fade = document.querySelector(".fade");
-  
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      firstModal.forEach(e => e.classList.add('hide'));
-    });
-    
-    fade.addEventListener('click', () => {
-      firstModal.forEach(e => e.classList.remove('hide'));
-    });
+  const btn = document.querySelector("#modal2");
+  const closeBtn = document.querySelector("#close-btn");
+  const firstModal = document.querySelector(".first_modal");
+
+  btn.addEventListener('click', () => {
+    firstModal.classList.add('hide');
   });
-        
-  // jQuery(function () {
-  //   const btns = document.querySelectorAll("#modal2");
-  //   const fade = document.querySelector(".fade");
   
-  //   btns.forEach(btn => {
-  //     btn.click(function() {
-  //       $('firstModal').forEach(e => e.modal('hide'));
-  //       $('secondModal').forEach(e => e.modal('show'));
-  //     });
-  //     fade.click(function() {
-  //       $('firstModal').forEach(e => e.modal('show'));
-  //       $('secondModal').forEach(e => e.modal('hide'));
-  //     });
-  //   });
-  // });
+  closeBtn.addEventListener('click', () => {
+    firstModal.classList.remove('hide');
+  });
 
 };
 

@@ -20,11 +20,11 @@
           <div class="prod-description">
             <%= prod.description %>
           </div>
-          <%= link_to "Mas", "#", class: "more-btn", data: { toggle: "modal", target: "#productinfo#{index}" }%>
+          <%= link_to "#{t('.more_btn')}", "#", class: "more-btn", data: { toggle: "modal", target: "#productinfo#{index}" }%>
         </div>
       </div>
       <!-- Modal -->
-      <div class="modal fade first_modal" id="productinfo<%= index %>" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal fade first_modal" id="productinfo<%= index %>" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
@@ -40,7 +40,7 @@
               </div>
               <div class="modal-footer">
                 <div class="btnbtn">
-                    <%= link_to "CONTACTAR", "#", class: "word", id: "modal2", data: { toggle: "modal", target: "#jorge" } %>
+                    <%= link_to "#{t('general_contact_btn')}", "#", class: "word", id: "modal2", data: { toggle: "modal", target: "#jorge" } %>
                     <i class="fas fa-chevron-right"></i>
                 </div>
               </div>
@@ -48,13 +48,13 @@
         </div>
       </div>
       <!-- Modal 2 -->
-      <div class="modal fade second_modal" id="jorge" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal fade second_modal" id="jorge" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog modal-dialog-centered contact-dialog">
             <div class="modal-content contact-content">
               <div class="contact-modal-header">
-                <p>Contáctanos</p>
+                <p><%= t('pages.home.contact_modal_title') %></p>
                 <button type="button" class="close contact-close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                  <span id="close-btn" aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="contact-modal-body">
@@ -62,7 +62,7 @@
                   <%= cl_image_tag("Jorge_fvpyuo.png", :transformation=> [{:width=>450, :height=>450, :gravity=>"face", :radius=>"max", :crop=>"crop"}, {:width=>150, :crop=>"scale"}]) %>
                 </div>
                 <div class="contact-details">
-                  <p class="contact-role">Director de ventas</p>
+                  <p class="contact-role"><%= t('pages.home.jorge_role') %></p>
                   <p class="contact-name">Jorge Gavilano Frantzen</p>
                   <p class="contact-email">jorgegavilano.frantzen@libresante.com</p>
                   <p class="contact-whatsapp">WhatsApp: +51 923501 365</p>
