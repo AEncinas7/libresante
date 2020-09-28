@@ -1,16 +1,21 @@
 const initModal = () => {
-  const btn = document.querySelector("#modal2");
-  const closeBtn = document.querySelector("#close-btn");
-  const firstModal = document.querySelector(".first_modal");
+  const btns = document.querySelectorAll("#modal2");
+  const closeBtns = document.querySelectorAll("#close-btn");
+  const firstModals = document.querySelectorAll(".first_modal");
 
-  btn.addEventListener('click', () => {
-    firstModal.classList.add('hide');
-  });
-  
-  closeBtn.addEventListener('click', () => {
-    firstModal.classList.remove('hide');
-  });
+  btns.forEach(btn => 
+    btn.addEventListener('click', () => {
+      // firstModal.classList.add('hide');
+      firstModals.forEach(e => e.classList.add('hide'));
+    })  
+  );
 
+  closeBtns.forEach(btn => 
+    btn.addEventListener('click', () => {
+      // firstModal.classList.remove('hide');
+      firstModals.forEach(e => e.classList.remove('hide'));
+    })
+  )
 };
 
 export { initModal };
